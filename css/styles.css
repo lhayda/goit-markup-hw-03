@@ -82,7 +82,14 @@ p {
   background-color: var(--primary-bg-light);
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  margin-right: 93px;
+
   font-family: var(--sacondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -96,6 +103,19 @@ p {
   color: var(--logo-color);
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 50px;
+}
+
+.nav-item:last-child {
+  margin: 0;
+}
+
 .nav-link,
 .auth-link {
   font-weight: 500;
@@ -106,6 +126,20 @@ p {
 
 .nav-link {
   color: var(--secondary-txt-light);
+}
+
+.auth-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.auth-item {
+  margin-right: 50px;
+}
+
+.auth-item:last-child {
+  margin: 0;
 }
 
 .auth-link {
