@@ -68,6 +68,11 @@ p {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200;
   padding-left: 15px;
@@ -79,12 +84,17 @@ p {
 /* Header */
 
 .header {
+  border-bottom: 1px solid #ECECEC;
   background-color: var(--primary-bg-light);
 }
 
 .header .container {
   display: flex;
   align-items: center;
+}
+
+.header .link {
+  padding: 24px 0;
 }
 
 .logo {
@@ -169,10 +179,18 @@ p {
 /* Hero */
 
 .hero {
+  padding: 200px 0;
+  text-align: center;
+
   background-color: var(--primary-bg-dark);
 }
 
 .hero-tittle {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -184,6 +202,8 @@ p {
 }
 
 .hero-btn {
+  padding: 10px 32px;
+
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -196,6 +216,7 @@ p {
   
   background-color: var(--accent-color);
   color: var(--primary-txt-dark);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
