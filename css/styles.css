@@ -58,6 +58,12 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -74,7 +80,7 @@ p {
 }
 
 .container {
-  width: 1200;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -93,12 +99,16 @@ p {
   align-items: center;
 }
 
+.header .logo {
+  margin-right: 93px;
+}
+
 .header .link {
   padding: 24px 0;
 }
 
 .logo {
-  margin-right: 93px;
+  display: block;
 
   font-family: var(--sacondary-font);
   font-weight: 700;
@@ -168,10 +178,13 @@ p {
 }
 
 .tittle {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--secondary-txt-light);
 }
@@ -227,7 +240,21 @@ p {
 
 /* Specifics */
 
+.specifics {
+  padding-bottom: 0;
+}
+
+.feature-list {
+  display: flex;
+}
+
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .feature-tittle {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -246,17 +273,40 @@ p {
 
 /* Examples */
 
+.examples-list {
+  display: flex;
+}
+
+.examples-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Team */
 
 .team {
   background-color: var(--secondary-bg-light);
 }
 
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+
 .team-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--secondary-txt-light);
 }
@@ -265,6 +315,7 @@ p {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--primary-txt-light);
 }
@@ -310,11 +361,22 @@ p {
 /* Footer */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
   background-color: var(--primary-bg-dark);
+}
+
+.footer .logo {
+  margin-bottom: 20px;
 }
 
 .footer .logo-accent {
   color: var(--primary-txt-dark);
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .place-link {
